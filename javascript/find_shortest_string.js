@@ -1,6 +1,11 @@
 function findShortestString(arr) {
   // type your code here
+  let shortestString
+  shortestString = arr.reduce((a, b) => a.length <= b.length ? a : b)
+  return shortestString
 }
+
+findShortestString(["test", "string" , "wow"])
 
 if (require.main === module) {
   // add your own tests in here
@@ -23,4 +28,7 @@ if (require.main === module) {
 module.exports = findShortestString;
 
 // Please add your pseudocode to this file
+  // assign variable for the shortest string
+  // reduce the given array comparing string lengths
+  // return shortest string found
 // And a written explanation of your solution
