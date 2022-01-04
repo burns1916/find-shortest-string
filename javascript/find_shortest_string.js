@@ -23,6 +23,7 @@ if (require.main === module) {
   console.log("=>", findShortestString(['flower', 'juniper', 'lily', 'dadelion']));
 
   // BENCHMARK HERE
+  
 }
 
 module.exports = findShortestString;
